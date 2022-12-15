@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="index.js"></script>
+</head>
+<body>
+    <header>
+        <img class="header__logo" src='http://pngimg.com/uploads/cat/cat_PNG50527.png'>
+        <div class="header__controls">
+            <button class="button_header" id="open_pop_up">Добавить кошку</button>
+        </div>
+    </header>
+    <div class="container">
+        <div data-wr class="wrapper">
+
+        </div>
+    </div>
+
+    <div class="pop_up" id="pop_up">
+        <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+                <p>Заполнить данные о коте</p>
+                <form action="https://cats.petiteweb.dev/api/single/AleksN-Frontend-9/add/" method="post" id="form">
+                    <label for="id_name">ID кота</label>
+                    <input disabled type="text" placeholder="ID кота" id="id_name">
+
+                    <label for="name">Имя кота</label>
+                    <input type="text" placeholder="Имя кота" id="name">
+
+                    <label for="rate">Рейтинг кота</label>
+                    <input type="number" placeholder="Введите число от 0 до 10" id="rate" min="0" max="10">
+
+                    <label for="age">Возраст</label>
+                    <input type="number" placeholder="Введите число" id="age" min="0" max="99">
+
+                    <label for="description">Описание кота</label>
+                    <input placeholder="Описание кота" id="description">
+
+                    <label for="form_image">Фотография кота</label>
+                    <input type="text" placeholder="Добавьте ссылку на фотографию" id="form_image">
+
+                    <label for="favorite">Любимец?</label>
+                    <select id="favorite">
+                        <option disabled selected>Выберите вариант</option>
+                        <option value="true">true</option>
+                        <option value="false">false</option>
+                      </select>
+
+                    <button type="submit" class="form__submit">Отправить данные</button>
+
+                    <div class="pop_up_close" id="pop_up_close">
+                        <i class="fa-solid fa-circle-xmark"></i>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

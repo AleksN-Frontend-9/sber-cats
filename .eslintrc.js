@@ -13,5 +13,7 @@ module.exports = {
   rules: {
     "no-console": 0,
     quotes: ["error", "double"],
+    "no-tabs": 0,
+    "linebreak-style": ["error", "windows"],
   },
 };
